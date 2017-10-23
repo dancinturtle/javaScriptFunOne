@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <p><h1>Range Print</h1></p>
+    <link rel="stylesheet" href="rangeprint.css">
+</head>
+<body>
+    <script type="text/javascript">
+    function printrange(startpoint,endpoint,skipamount){
+        for(var i=startpoint;i<endpoint;i=i+skipamount){
+            console.log(i);
+        }
+    }
+    printrange(2,10,2);
+
+    function printRangeBonus(start, end, skipamnt){
+
+        if(!skipamnt)
+        {
+         skipamnt=1;   
+        }
+        if(!end)
+        {
+            end=start;
+            start=0;
+        }
+        for(var i=start;i<end;i=i+skipamnt){
+        console.log(i);
+        }
+    }
+
+    printRangeBonus(4);
+    printRangeBonus(2,9);     
+    </script>
+</body>
+</html>
