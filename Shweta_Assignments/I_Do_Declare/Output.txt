@@ -1,0 +1,22 @@
+
+Console Clear
+"The First Number:"
+24
+"The Second Number:"
+234
+"The Third Number:"
+33
+"The Fourth Number:"
+45
+"The First String:"
+"Shweta"
+"The Second String:"
+"Sahu"
+"The Third String:"
+"Tinu"
+"The First Boolean:"
+true
+"The Second Boolean:"
+false
+"The Undefined Variable:"
+undefined

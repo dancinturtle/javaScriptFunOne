@@ -1,0 +1,21 @@
+var num1 = 24;
+var num2 = 234;
+var num3 = 33;
+var num4 = 45;
+var string1="Shweta";
+var string2="Sahu";
+var string3="Tinu";
+var boolean1 = true;
+var boolean2 = false;
+var undefinedVarr;
+
+console.log("The First Number:",num1);
+console.log("The Second Number:",num2);
+console.log("The Third Number:",num3);
+console.log("The Fourth Number:",num4);
+console.log("The First String:",string1);
+console.log("The Second String:",string2);
+console.log("The Third String:",string3);
+console.log("The First Boolean:",boolean1);
+console.log("The Second Boolean:",boolean2);
+console.log("The Undefined Variable:",undefinedVarr);
