@@ -1,0 +1,19 @@
+body{
+
+}
+*{
+    border:1px dashed red;
+    margin:0;
+    padding:0;
+}
+#svg{
+    height:100%;
+    width:100%;
+    border: 1px solid grey;
+    border-radius:5px;
+    margin:20px;
+}
+input, label{
+    padding: 5px;
+    margin: 10px;
+}
