@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Can i have the Time</title>
+</head>
+<body>
+  <p>Click the button for time.</p>
+
+<button onclick="time()">What Time Is It?</button>
+<p id="demo"></p>
+
+
+   <script>
+   function time(){
+       var HOUR = prompt("what is the HOUR?", );
+       var MINUTE = prompt("what is the minute?", );
+       var PERIOD = prompt("what period of the day is it?", "AM");
+       if  ((HOUR>=0 && HOUR<12) && (60>MINUTE && MINUTE>45) && (PERIOD=="AM")) {
+           HOUR = parseInt(HOUR) + 1;
+           console.log("it's almost", HOUR, " in the Morning.");
+            }
+       else if ((HOUR>=0 && HOUR<12) && (60>MINUTE && MINUTE>45) && (PERIOD=="PM")) {
+            HOUR = parseInt(HOUR) + 1;
+            console.log("it's almost", HOUR, "in the Evening");
+            }
+       else if ((HOUR>=0 && HOUR<12) && (0<MINUTE && MINUTE<15) && (PERIOD=="AM")){
+            HOUR = parseInt(HOUR);
+            console.log("pie");
+            console.log("it's just after", HOUR, "in the Morning");
+            }
+       else if ((HOUR>=0 && HOUR<12) && (0<MINUTE && MINUTE<15) && (PERIOD=="PM")){
+            HOUR = parseInt(HOUR);
+            console.log("it's just after", HOUR, "in the Evening");
+            }
+       else if((HOUR>=0 && HOUR<12) && (MINUTE==60) && (PERIOD=="AM")) {
+            HOUR = parseInt(HOUR)+1;
+            console.log("it is", HOUR, "in the Morning");
+            }
+       else if ((HOUR>=0 && HOUR<12) && (MINUTE==60) && (PERIOD=="PM")){
+            HOUR = parseInt(HOUR)+1;
+            console.log("it is", HOUR, "in the Evening");
+            }
+       else if ((HOUR==12) && (60>=MINUTE && MINUTE>45) && (PERIOD=="PM")){
+            HOUR = 1;
+            console.log("it is", HOUR, "in the Morning");
+            }
+       else if ((HOUR=12) && (60>=MINUTE && MINUTE>45) && (PERIOD=="AM")){
+            HOUR = 1;
+            console.log("it is", HOUR, "in the Afternoon");
+            }
+       else {
+            console.log("Invalid HOUR/Minutes/Period format input");
+            }
+   }
+    
+    
+   </script>
+    
+</body>
+</html>
