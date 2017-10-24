@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time Assignment</title>
+</head>
+<body>
+    
+    <script>
+    var HOUR = 7;
+    var MINUTE = 05;
+    var PERIOD_1 = "AM";
+   // var PERIOD_2 = "PM";
+    
+    var first_string = " ";
+    var second_string = " ";
+    
+    var string = "its ";
+
+    if(MINUTE > 30)
+    {
+        string += "almost : " + (HOUR +1)
+    }
+    else{
+        string +="just after : " + (HOUR +1)
+    }
+
+    if(PERIOD_1 == "PM")
+        string +="in the evening";
+    else{
+        string += "in the morning";
+         
+}
+    console.log(string);
+    </script>
+</body>
+</html>
