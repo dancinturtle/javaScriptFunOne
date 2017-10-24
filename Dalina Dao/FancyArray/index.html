@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fancy Array</title>
+</head>
+
+<body>
+    <h1>Fancy Array</h1>
+    <!-- prints contents of the array with the format "index, symbol, value" -->
+    <script>
+        function printArr(arr, symbol) {
+            if (symbol == undefined) {
+                for (var i = 0; i < arr.length; i++) {
+                    console.log(i, "-->", arr[i]);
+                }
+            }
+            else {
+                for (var i = 0; i < arr.length; i++) {
+                    console.log(i, symbol, arr[i]);
+                }
+            }
+        }
+        var arr = ["James", "Jill", "Jane", "Jack"];
+        printArr(arr);
+
+        arr = ["James", "Jill", "Jane", "Jack"];
+        var symbol = " ---- ";
+        printArr(arr, symbol);
+
+        arr = ["Dalina", "Abhi", "Jinal", "Dennise"];
+        var symbol = "::";
+        printArr(arr, symbol);
+
+        function rev(isReversed, arr, symbol) {
+            if (isReversed) {
+                if (symbol == undefined) {
+                    for (var i = arr.length - 1; i >= 0; i--) {
+                        console.log(i, "-->", arr[i]);
+                    }
+                }
+                else {
+                    for (var i = arr.length - 1; i >= 0; i--) {
+                        console.log(i, symbol, arr[i]);
+                    }
+                }
+            }
+        }
+
+        var isReversed = true;
+        rev(isReversed, arr);
+    </script>
+</body>
+
+</html>
