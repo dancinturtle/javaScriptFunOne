@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Random Chance Assignment</title>
+    </head>
+    <body>
+        <h3>Output of the program can be seen using "Inspect Element" and clicking on the "Console tab"</h3> 
+        <p>Slots game where 1 game = 1 qtr.<br>Have 1 in 100 chance of winning.<br>Winnings can range from 50--> 100 quarters.<br>Use Math.random + Math.floor to pick random # of coins if they win.<br> Return new quarter balance if they win, Return 0 if they used all the quarters.</p>
+        <script>
+            var credits = 100;
+
+            function slots(quarters){
+
+                while (quarters > 0) {
+
+                    if (quarters >= 200) {
+                        console.log("WOW... you really are lucky. We're cashing you out at", quarters, "quarters. CONGRATS!");
+                        break
+                    }
+
+                    else if (Math.trunc(Math.random() * 100) == 20){
+                        quarters = quarters + (Math.floor((Math.random() * 51))+ 50);
+                        console.log("YOU WIN!!! You now have", quarters, "quarters.");
+                    }
+                    
+                    else {
+                        quarters--;
+                        console.log("Oops, you lost that round. You now have", quarters, "quarters.");
+                    }
+                }
+
+                if (quarters == 0){
+                    console.log("Uh oh!! Looks like you ran out of quarters.")
+                }
+
+                console.log("GAME OVER.");
+
+                return quarters;
+            }
+
+            slots(credits);
+
+        </script>
+        
+        
+    </body>
+</html>
