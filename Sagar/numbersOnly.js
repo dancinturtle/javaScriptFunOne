@@ -13,7 +13,7 @@ function stringsOnly(arr){
 	var temp = 0;
 	for(var i = 0; i < arr.length-1; i++){
 		if(typeof arr[i] == "number"){
-			for(var j = i+1; j < arr.length-1; j++){
+			for(var j = i; j < arr.length-1; j++){
 				temp = arr[j];
 				arr[j] = arr[j+1];
 				arr[j+1] = temp;
@@ -22,8 +22,7 @@ function stringsOnly(arr){
 			i--;
 		}
 	}
-	for (var i = 0; i < arr.length; i++){
-		console.log(arr[i]);
+	return arr;
 	}
 }
 
